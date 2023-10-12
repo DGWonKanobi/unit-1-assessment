@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="game-container">
-        <div class="counter plus">0</div>
-        <div class="center-content">
-          <input type="number" id="inputValue" placeholder="Enter a value">
-          <button onclick="updateCounters()">Update</button>
-        </div>
-        <div class="counter minus">0</div>
-      </div>
+  <div class="game-container">
+    <div class="result-box" id="resultBox">0</div>
+    <div class="counter plus" id="plusButton">+</div>
+    <div class="input-container">
+      <input type="number" id="inputValue" value="1" placeholder="Enter a value">
+    </div>
+    <div class="counter minus" id="minusButton">-</div>
+  </div>
 </body>
 
 <script src="js/main.js"></script>
