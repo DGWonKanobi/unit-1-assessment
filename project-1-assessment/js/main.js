@@ -10,42 +10,42 @@
 // //     }
 // //     document.getElementById('inputValue').value = ''; // Clear the input field
 //   }
-// let btnAdd = document.querySelector('.plus');
-// let btnSubtract = document.querySelector('.minus');
-// let input = document.querySelector('input');
-// btnAdd.addEventListener('click', () => {
-//   input.value = parseInt(input.value) + 1;
-// });
-// btnSubtract.addEventListener('click', () => {
-//   input.value = parseInt(input.value) - 1;
-// });
-
 let btnAdd = document.querySelector('.plus');
 let btnSubtract = document.querySelector('.minus');
 let input = document.querySelector('input');
-let resultElement = document.getElementById('result');
-
 btnAdd.addEventListener('click', () => {
   input.value = parseInt(input.value) + 1;
-  updateResult();
 });
-
 btnSubtract.addEventListener('click', () => {
   input.value = parseInt(input.value) - 1;
-  updateResult();
 });
 
-input.addEventListener('input', () => {
-  updateResult();
-});
+// let btnAdd = document.querySelector('.plus');
+// let btnSubtract = document.querySelector('.minus');
+// let input = document.querySelector('input');
+// let resultElement = document.getElementById('result');
 
-function updateResult() {
-  const inputValue = parseInt(input.value) || 0;
-  resultElement.textContent = inputValue + (parseInt(btnAdd.textContent) - parseInt(btnSubtract.textContent));
-}
+// btnAdd.addEventListener('click', () => {
+//   input.value = parseInt(input.value) + 1;
+//   updateResult();
+// });
 
-// Initialize result
-updateResult();
+// btnSubtract.addEventListener('click', () => {
+//   input.value = parseInt(input.value) - 1;
+//   updateResult();
+// });
+
+// input.addEventListener('input', () => {
+//   updateResult();
+// });
+
+// function updateResult() {
+//   const inputValue = parseInt(input.value) || 0;
+//   resultElement.textContent = inputValue + (parseInt(btnAdd.textContent) - parseInt(btnSubtract.textContent));
+// }
+
+// // Initialize result
+// updateResult();
 
 // Initialize variables to track the click count and input value
 // let plusClickCount = 1;
